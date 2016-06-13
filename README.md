@@ -10,8 +10,26 @@
 
 ## Use
 
-Use this module to report top level result of an action. For example
-with promises
+Use this module to report top level result of an action. 
+
+Simple example
+
+```js
+const report = require('report-result')
+const result = report.success('it worked!', 'my action')(42)
+// result is 42 (report functions pass any result)
+```
+
+output
+
+```
+----------------------------
+it worked! my action
+42
+----------------------------
+```
+
+Example with promises
 
 ```js
 const report = require('report-result')

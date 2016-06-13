@@ -8,7 +8,11 @@ function reportSuccess (...details) {
   const line = hr.bind(null, '-')
   function report (result) {
     line()
-    console.log.apply(console, details)
+    if (details.length) {
+      console.log.apply(console, details)
+    } else {
+      console.log('SUCCESS')
+    }
     if (result) {
       console.log(result)
     }
@@ -21,7 +25,11 @@ function reportFailure (...details) {
   const line = hr.bind(null, 'x')
   function report (err) {
     line()
-    console.error.apply(console, details)
+    if (details.length) {
+      console.error.apply(console, details)
+    } else {
+      console.error('FAILURE')
+    }
     if (!err) {
       console.error('Missing error ...')
     } else {
