@@ -44,15 +44,20 @@ doSomething()
 will be forwarded to the Sentry server using
 [node-sentry-error-reporter](https://github.com/bahmutov/node-sentry-error-reporter)
 
+## Why?
+
+Anything to make working with promises simpler. Thus curried functions that expect single
+result and return it after printing the message.
+
+Related project: [little-store](https://github.com/bahmutov/little-store)
+
 ### Small print
 
 Author: Gleb Bahmutov &lt;gleb.bahmutov@gmail.com&gt; &copy; 2016
 
-
 * [@bahmutov](https://twitter.com/bahmutov)
 * [glebbahmutov.com](http://glebbahmutov.com)
 * [blog](http://glebbahmutov.com/blog)
-
 
 License: MIT - do anything with the code, but don't blame me if it does not work.
 
